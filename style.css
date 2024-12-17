@@ -19,10 +19,50 @@ body{
         display: flex;
         flex-direction: column;
         border: 1px solid #000;
-        width: 300px;
+        width: 250px;
         h2, h3{
             margin: 0;
         }
        
+    }
+    &.default{
+        output{
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #000;
+            h2, h3{
+                margin: 0;
+            }
+           
+        }
+    }
+    &.dark{
+        output{
+            background: black;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #000;
+            h2, h3{
+                margin: 0;
+            }
+           
+        }
+    }
+    
+}
+@media print {
+    .style {
+        display: none !important;;
+    }
+    form {
+        display: none !important;;
+    }
+    output {
+        border: none;
+        width: 100%;
+        padding: 0;
     }
 }
